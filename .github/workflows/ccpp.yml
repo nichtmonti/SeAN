@@ -12,7 +12,7 @@ jobs:
       - name: root
         uses: docker://rootproject/root-ubuntu16:6.10
       - name: add parameter
-        run: echo 'set(CMAKE_MODULE_PATH /usr/local/share/root/cmake/ROOTConfig.cmake)' >> CmakeLists.txt
+        run: echo 'set(CMAKE_MODULE_PATH /usr/local/share/root/cmake/ROOTConfig.cmake)' >> CMakeLists.txt
       - name: cmake
         run: cmake .
       - name: make
