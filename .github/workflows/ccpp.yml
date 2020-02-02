@@ -9,8 +9,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: install root
-        run: sudo apt-get install
       - name: cmake
         run: cmake .
       - name: make
