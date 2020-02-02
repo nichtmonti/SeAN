@@ -5,10 +5,12 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: mazurov/cern-root
 
     steps:
       - uses: actions/checkout@v2
+      - name: install root
+        run: sudo apt-get install
       - name: cmake
         run: cmake .
       - name: make
