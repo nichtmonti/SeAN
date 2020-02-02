@@ -11,8 +11,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: root
         uses: docker://rootproject/root-ubuntu16:6.10
-      - name: add parameter
-        run: echo 'set(ROOT_DIR /usr/local/share/root/cmake/)' >> CMakeLists.txt
       - name: cmake
         run: cmake .
       - name: make
