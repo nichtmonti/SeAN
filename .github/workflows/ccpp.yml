@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: root
-        uses: docker://rootproject/root-ubuntu16:6.10
+        uses: docker://rootproject/root-ubuntu16:latest
       - name: cmake
         run: cmake .
       - name: make
