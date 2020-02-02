@@ -5,10 +5,12 @@ on: [push]
 jobs:
   build:
 
-    runs-on: mazurov/cern-root
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
+      - name: root
+        uses: docker:rootproject/root-ubuntu16
       - name: cmake
         run: cmake .
       - name: make
