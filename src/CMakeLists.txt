@@ -12,7 +12,7 @@ include_directories("../include/")
 add_library(sean_lib Absorption.cpp CrossSection.cpp Experiment.cpp InputReader.cpp Integrator.cpp PhononDensity.cpp Plotter.cpp Settings.cpp Target.cpp Writer.cpp)
 
 set(CMAKE_MODULE_PATH /usr/local/share/root/cmake/ROOTConfig.cmake)
-set(ROOT_DIR /usr/local/share/root/cmake/)
+set(ROOT_DIR /usr/local/share/root/cmake)
 list(APPEND CMAKE_PREFIX_PATH $ENV{ROOTSYS}$)
 find_package(ROOT REQUIRED COMPONENTS MathMore)
 include(${ROOT_USE_FILE})
